@@ -70,7 +70,6 @@ attatchMenuStateButtonsEvents = function(menuStateObj){
         menuStateObj.gameStateManager.states.push(nextState);
     });
     menuStateObj.highScoresButton.buttonImage.addEventListener('click', function(){
-        window.alert( localStorage.getItem(this.playerPoints));
         //read high scores from txt file
     });
     menuStateObj.exitButton.buttonImage.addEventListener('click', function(){
