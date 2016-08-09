@@ -53,7 +53,6 @@ function PlayState(gameStateManagerObj){
             if(collisionDetected){
                 this.playerLives -= 1;
                 if(this.playerLives === 0){
-                  localStorage.setItem("High-score: ",JSON.stringify(this.playerPoints));
                     var nextState = new ExitState(this.gameStateManager);
                     this.gameStateManager.states.push(nextState);
                 }
